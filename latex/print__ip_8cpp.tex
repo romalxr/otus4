@@ -1,0 +1,78 @@
+\hypertarget{print__ip_8cpp}{\section{print\-\_\-ip.\-cpp File Reference}
+\label{print__ip_8cpp}\index{print\-\_\-ip.\-cpp@{print\-\_\-ip.\-cpp}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$tuple$>$}\\*
+{\ttfamily \#include $<$type\-\_\-traits$>$}\\*
+Include dependency graph for print\-\_\-ip.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{print__ip_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_tuple_printer}{Tuple\-Printer$<$ Tuple, N $>$}
+\item 
+struct \hyperlink{struct_tuple_printer_3_01_tuple_00_011_01_4}{Tuple\-Printer$<$ Tuple, 1 $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename std\-::enable\-\_\-if$<$ !(std\-::is\-\_\-integral$<$ T $>$\-::value$\vert$$\vert$std\-::is\-\_\-same$<$ T, std\-::string $>$\-::value), T $\ast$ $>$\-::type  = nullptr$>$ }\\void \hyperlink{print__ip_8cpp_add22f80e675a041f07648b701fc81b88}{print} (const T \&val)
+\begin{DoxyCompactList}\small\item\em Функция печати адреса для контейнеров \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename std\-::enable\-\_\-if$<$ std\-::is\-\_\-integral$<$ T $>$\-::value, T $\ast$ $>$\-::type  = nullptr$>$ }\\void \hyperlink{print__ip_8cpp_ab0ee94f0f283926675c2820c1e63c9e3}{print} (T val)
+\begin{DoxyCompactList}\small\item\em Функция печати адреса для целочисленных типов \end{DoxyCompactList}\item 
+{\footnotesize template$<$class... Args$>$ }\\void \hyperlink{print__ip_8cpp_abe476df5eb88070c1cacb35714a8a93a}{print} (std\-::tuple$<$ Args...$>$ t)
+\begin{DoxyCompactList}\small\item\em Функция печати адреса для кортежей \end{DoxyCompactList}\item 
+int \hyperlink{print__ip_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{print__ip_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{print\-\_\-ip.\-cpp@{print\-\_\-ip.\-cpp}!main@{main}}
+\index{main@{main}!print_ip.cpp@{print\-\_\-ip.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{print__ip_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+\hypertarget{print__ip_8cpp_add22f80e675a041f07648b701fc81b88}{\index{print\-\_\-ip.\-cpp@{print\-\_\-ip.\-cpp}!print@{print}}
+\index{print@{print}!print_ip.cpp@{print\-\_\-ip.\-cpp}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename std\-::enable\-\_\-if$<$ !(std\-::is\-\_\-integral$<$ T $>$\-::value$\vert$$\vert$std\-::is\-\_\-same$<$ T, std\-::string $>$\-::value), T $\ast$ $>$\-::type  = nullptr$>$ void print (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{val}
+\end{DoxyParamCaption}
+)}}\label{print__ip_8cpp_add22f80e675a041f07648b701fc81b88}
+
+
+Функция печати адреса для контейнеров 
+
+Функция печати адреса для строки \hypertarget{print__ip_8cpp_ab0ee94f0f283926675c2820c1e63c9e3}{\index{print\-\_\-ip.\-cpp@{print\-\_\-ip.\-cpp}!print@{print}}
+\index{print@{print}!print_ip.cpp@{print\-\_\-ip.\-cpp}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename std\-::enable\-\_\-if$<$ std\-::is\-\_\-integral$<$ T $>$\-::value, T $\ast$ $>$\-::type  = nullptr$>$ void print (
+\begin{DoxyParamCaption}
+\item[{T}]{val}
+\end{DoxyParamCaption}
+)}}\label{print__ip_8cpp_ab0ee94f0f283926675c2820c1e63c9e3}
+
+
+Функция печати адреса для целочисленных типов 
+
+\hypertarget{print__ip_8cpp_abe476df5eb88070c1cacb35714a8a93a}{\index{print\-\_\-ip.\-cpp@{print\-\_\-ip.\-cpp}!print@{print}}
+\index{print@{print}!print_ip.cpp@{print\-\_\-ip.\-cpp}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class... Args$>$ void print (
+\begin{DoxyParamCaption}
+\item[{std\-::tuple$<$ Args...$>$}]{t}
+\end{DoxyParamCaption}
+)}}\label{print__ip_8cpp_abe476df5eb88070c1cacb35714a8a93a}
+
+
+Функция печати адреса для кортежей 
+
