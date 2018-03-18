@@ -13,6 +13,7 @@ configure_file(version.h.in version.h)
 add_executable(print_ip print_ip.cpp)
 
 install(TARGETS print_ip RUNTIME DESTINATION bin)
+
 set(CPACK_GENERATOR DEB)
 
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
